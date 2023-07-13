@@ -30,3 +30,28 @@ Purpose and Objectives: The Ennis data pipeline serves as a comprehensive soluti
 Depending on the availability of annotations from the transcription stage, the downstream components of the Ennis data pipeline can be dynamically adjusted or modified. This flexibility ensures that the pipeline’s analysis processes align with the availability of annotated data, allowing for adaptability and scalability.
 
 
+Preparing JSONS:
+
+1.	Within this JSON, the variable “audio_file” represents the uploaded .wav audio file of a child. The “duration” indicates the total time length of the audio, while the “sample rate” specifies the rate at which the audio is sampled. The audio data is sourced from the Childes Talk Bank, specifically from the Ennis repository.  If there are multiple speakers in the audio, the “selected_speaker_name” field is used to specify the desired speaker, focusing solely on the child’s speech. The “child_id” corresponds to the unique identifier of the child, and the “stories” field represents the number of stories narrated by the child in the audio.
+ 
+
+2.	Language Speech Analysis JSON contains information about an audio file and its associated child speech data. The audio file is name “audio.wav” and has a duration of 180.5 seconds. It has a sample rate and a channel. The “selected_speaker_name” field indicates that the speech from the child should be considered for analysis. The child is identifies by the “Child_id” with the value 1234. The “transcription” field is currently empty and can be used to store the transcription of the child’d speech if available. This JSON includes an array of “stories” narrated by the child. Each story has its own set of attributes “story_id” represents the unique identifier for each story, “start+time” and “end_time” indicate the timestamps of when each story was recorded, “story” contains the actual text of the story narrated by the child, “word_counts” denotes the number of words in the story,”pgu” stands for the proportion of grammatical utterances, which represents the ratio of grammatically correct utterances in the story.Independent_clauses and dependent clauses indicates the number of independent,dependent cluases in the story, Mean length of Child Utterance, which represents the average length of the child’s utterances in the story.
+
+
+ 
+
+3.	Story segment calculator, the variable “audio_file” represents the uploaded .wav audio file of a child. The “duration” indicates the total time length of the audio, while the “sample rate” specifies the rate at which the audio is sampled. Sg1,sg2 …. Are the segments of sentences for each story in the audio.If there are multiple speakers in the audio, the “selected_speaker_name” field is used to specify the desired speaker, focusing solely on the child’s speech. The “child_id” corresponds to the unique identifier of the child, and the “stories” field represents the number of stories narrated by the child in the audio.
+ 
+
+
+4.	Story selector, the variable “audio_file” represents the uploaded .wav audio file of a child. The “duration” indicates the total time length of the audio, while the “sample rate” specifies the rate at which the audio is sampled. Sg1,sg2 …. Are the segments of sentences for each story in the audio. Intially “story_selected” is assigned to NULL, it is to select a particular story of the child.If there are multiple speakers in the audio, the “selected_speaker_name” field is used to specify the desired speaker, focusing solely on the child’s speech. The “child_id” corresponds to the unique identifier of the child, and the “stories” field represents the number of stories narrated by the child in the audio.
+
+
+ 
+
+5.	Story Metric, the variable “audio_file” represents the uploaded .wav audio file of a child. The “duration” indicates the total time length of the audio, while the “sample rate” specifies the rate at which the audio is sampled. Sg1,sg2 …. Are the segments of sentences for each story in the audio. Intially “story_selected” is assigned to NULL, it is to select a particular story of the child.If there are multiple speakers in the audio, the “selected_speaker_name” field is used to specify the desired speaker, focusing solely on the child’s speech. The “child_id” corresponds to the unique identifier of the child, and the “stories” field represents the number of stories narrated by the child in the audio.
+
+
+
+
+
