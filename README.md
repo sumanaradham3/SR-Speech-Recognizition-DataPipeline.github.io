@@ -28,5 +28,5 @@ Purpose and Objectives: The Ennis data pipeline serves as a comprehensive soluti
 •	This component utilizes the output from the previous stages to implemt an Ennis-based screening algorithm.
 •	It applies predefines criteria and thresholds to identify potential speech disorders or areas of concern in the child speech data.
 Depending on the availability of annotations from the transcription stage, the downstream components of the Ennis data pipeline can be dynamically adjusted or modified. This flexibility ensures that the pipeline’s analysis processes align with the availability of annotated data, allowing for adaptability and scalability.
-![image](https://github.com/sumanaradham3/SR-Speech-Recognizition-DataPipeline.github.io/assets/113401577/9c94a1df-eff9-4bac-b8f7-c1bc6ae0bbdb)
+
 
